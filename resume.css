@@ -110,6 +110,7 @@
 
   #resumeDisplay {
     page-break-inside: avoid; /* Prevents page breaks inside the resume */
+    box-sizing: border-box
   }
 
   section, header {
@@ -120,6 +121,10 @@
   }
 
   @page {
+    size: A4;
     margin: 10mm; /* Adjust margins for printing */
+  }
+  h1, h2, h3, p {
+    font-size: 14px; /* Adjust as needed */
   }
 }
