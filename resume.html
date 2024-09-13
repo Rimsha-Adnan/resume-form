@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Resume</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="container" id="resumeDisplay">
+    <header>
+      <h1 id="fullNameDisplay"></h1>
+      <p id="emailDisplay"></p>
+      <p id="phoneDisplay"></p>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Degree:</strong> <span id="degreeDisplay"></span></p>
+      <p><strong>Institution:</strong> <span id="institutionDisplay"></span></p>
+      <p><strong>Year:</strong> <span id="yearDisplay"></span></p>
+    </section>
+
+    <section>
+      <h2>Job Details</h2>
+      <p><strong>Job Title:</strong> <span id="jobTitleDisplay"></span></p>
+      <p><strong>Job Description:</strong> <span id="jobDescriptionDisplay"></span></p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p id="skillsDisplay"></p>
+    </section>
+
+    <button id="editButton">Edit Resume</button>
+    <button id="downloadButton">Download Resume</button>
+    <div class="link-section">
+      <p>Shareable Link: <span><a id="shareableLink" href="#" target="_blank"></a></span></p>
+      <button id="copyLinkButton">Copy Link</button>
+    </div>
+  </div>
+
+  <script src="resume.js"></script>
+</body>
+</html>

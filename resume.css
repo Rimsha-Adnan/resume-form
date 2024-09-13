@@ -1,0 +1,125 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+     background: linear-gradient(to right, #00c6ff, #0072ff); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #083667;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  section h2 {
+    font-size: 1.8em;
+    color: #083667;
+    border-bottom: 2px solid #083667;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  section p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    background-color: #143b66;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #1e2f40;
+  }
+  
+  .link-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #shareableLink {
+    color: #083667;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #copyLinkButton {
+    background-color: #083667;
+   }
+/* Print Styling */
+@media print {
+  body {
+    background: none;
+  }
+
+  .container {
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  #resumeDisplay {
+    page-break-inside: avoid; /* Prevents page breaks inside the resume */
+  }
+
+  section, header {
+    page-break-inside: avoid; /* Prevents page breaks in individual sections */
+  }
+  button, .link-section {
+    display: none; /* Hide buttons and shareable link during printing */
+  }
+
+  @page {
+    margin: 10mm; /* Adjust margins for printing */
+  }
+}
